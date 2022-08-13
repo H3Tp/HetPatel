@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Assessment</title>
+
+
+    <link rel="stylesheet" href="./css/design-style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+ 
+    <script src="js/scripting.js"></script>
+  </head>
+  <body>
+    <div class="first-background">
+    <section class="first-section">
+      <div class="left"><div class="div-img"><img src="./images/het.jpeg" alt="Het" class="main-img"/></div></div>
+      
+      <div class="right">
+        <p class="sub-head sub-txt">Hello!</p>
+        <p class="myname">My name is Het</p>
+        <p class="sub-head">I am a student here in seneca college and doing a advance diploma degree in computer scioence. I am very much intrested in computers and would love to work on the front end side.</p>
+        <div class="main-btns">
+        <a href="./resume/Resume_hetpatel.docx" download><button  class="btn btn1"> Resume</button></a>
+        <a href="#form"><button class="btn btn2">Contact Me</button></a></div>
+      
+    </div>
+    </section>
+    </div>
+
+
+
+
+ <div class="section-2">
+  <h1>About</h1>
+    <div class="basic-info">
+
+      
+      <div id="basic-info-inside">
+        <h2>Basic Information</h2>
+        <table id="tabledata">
+          <tr>
+            <th>Age:</th>
+            <td>19</td>
+          </tr>
+          <tr>
+            <th>EMAIL:</th>
+            <td>hpatel303@myseneca.ca</td>
+          </tr>
+          <tr>
+            <th>LANGUAGE::</th>
+            <td>English, Hindi, Gujarati</td>
+          </tr>
+          <tr>
+            <th>CLASS SECTION::</th>
+            <td>NEE</td>
+          </tr>
+          <tr>
+            <th>STUDENT ID:</th>
+            <td>154671218</td>
+          </tr>
+          <tr>
+            <th>INSTRUCTOR:</th>
+            <td>Noman Atique</td>
+          </tr>
+        </table>
+      </div>
+      <div id="aboutme">
+        <h2>About Me and Academic Honesty</h2>
+        <p
+          >I declare that my assessment is wholly my own work in accordance with
+          Seneca Academic Policy. No part of this assessment has been copied
+          manually or electronically from any other source (including web sites)
+          except for the information supplied by the WEB222 instructors and / or
+          made available in this assessment for my use. I also declare that no
+          part of this assignment has been distributed to other students.</p
+        >
+        <p><strong>Date:</strong> 08/12/2022 </p> 
+     
+      </div>
+    </div>
+</div>  
+<div class="new-section">
+    <div class="education">
+      <br>
+      <h1 style="text-align: center; color: #ffffff;">Education</h1>
+      <br>
+      <div class="education-section">
+      <div id="edu" >
+        <div class="study">
+          <img src="./images/seneca-logo.png" alt="seneca-logo" id="logos">
+          <p>Current - 2022-2024</p>
+          <h3>Seneca college (CPA)</h3>
+        </div>
+      </div>
+      <div id="edu">
+        <div class="study">
+          <img src="./images/HaroldMBrathwaite.png" alt="HaroldMBrathwaite" id="logos">
+          <p>September 2019-2021</p>
+          <h3>Harold M Braithwaite – Brampton (High school)</h3>
+        </div>
+      </div>
+      </div>
+    </div></div>
+
+    <div id="form" class="form">
+      <h1 class="contact-me"> Contact Me</h1>
+         <div class="form-inside" >
+      <div class="frm">
+           <form action="https://httpbin.org/post" method="post">
+            
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="name"  required/>
+             <br />
+       
+               <label for="email">Email:</label>
+               
+
+             <input type="email" id="email" name="email"  required/>
+             <br />
+
+             <label for="address">Address:</label>
+            
+
+             <input type="textarea" id="address" name="address"  required/>
+             <br />
+     
+             <label for="city">City:</label>
+        <datalist id="city">
+          <option value="Toronto"></option>
+          <option value="Montreal"></option>
+          <option value="Halifax"></option>
+          <option value="Quebec"></option>
+          <option value="Calgary"></option>
+          <option value="Ottawa"></option>
+          <option value="Edmonton"></option>
+          <option value="Vancouver"></option>
+        </datalist>
+        <input list="city" name="city" id="city" required/>
+     
+             <br/>
+             <label for="zipcode">Zipcode:</label>
+             <input type="textarea" id="zipcode" name="zipcode" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required /><br />
+     
+             <label for="what-about">What this is about:</label>
+
+             <input type="radio" id="question" name="what-about" onclick="check2()" required>
+             Question
+              </input>
+             <input type="radio" id="comment" name="what-about" onclick="check2()"  required>
+             Comment
+            </input>
+
+             <input type="radio" id="hiring" name="what-about" onclick="check()"  required>
+             Hiring
+            </input>
+              <p id="salaryadd"></p>
+             
+
+             <br />
+             <label for="message">Message:</label>
+             <textarea id="message" name="message " rows="5"  required></textarea> <br/>
+
+             <input type="submit" class="btn-submit">
+             <input value="Reset" type="reset" class="reseting">
+
+           </form>
+          </div>
+         </div>
+       </div>
+
+<br/>
+    <footer class="footer-design">
+      <p style="color: white;" class="foot-txt">   Author : Het Patel &nbsp &copy Copyright &nbsp 2022 - All right reserved.</p>
+      <br/>
+    </footer>
+  </body>
+</html>
